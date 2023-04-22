@@ -142,6 +142,9 @@ section.active {
   
 /* Styles pour la section services */
 #services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.6);
   background-position: center;
   background-size: cover;
@@ -151,22 +154,29 @@ section.active {
   padding: 50px;
   box-sizing: border-box;
   height: auto;
-  }
-  
-  #services > div {
+}
+
+#services > div {
   text-align: center;
-  }
-  
-  #services > div > h2 {
-  text-decoration: underline;
+}
+
+#services > #titre { 
+   text-decoration: underline;
+  color: rgba(223, 0, 0, 0.7);
   text-align: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+#services > #titre > h2 {
+ 
   margin-top: 0;
   font-size: 2rem;
   font-weight: bold;
-  color: #d60000;
-  }
-  
-  .service {
+ 
+}
+
+.service {
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 2px 2px 4px rgba(255, 255, 255, 1);
   padding: 40px 60px;
@@ -176,9 +186,9 @@ section.active {
   font-size: 1.2rem;
   line-height: 1.5rem;
   text-align: justify;
-  }
-  
-  .service h3 {
+}
+
+.service h3 {
   margin-top: 30px;
   font-size: 1.5rem;
   font-weight: bold;
@@ -187,9 +197,9 @@ section.active {
   margin-top: 30px;
   font-weight: bold;
   display: inline-block;
-  }
-  
-  .service p {
+}
+
+.service p {
   width: 100%;
   padding: 30px;
   margin-top: 30px;
@@ -198,9 +208,8 @@ section.active {
   line-height: 1.5rem;
   text-align: left;
   color: #ffffff;
-  }
+}
 
-  
 /* style pour la liste de tâches */
 .service ul {
   list-style: none;
@@ -241,6 +250,25 @@ section.active {
   width: 100%;
   height: 100%;
   }
+
+  /* style pour le mini-jeu */
+
+  .mini-jeu {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .mini-jeu iframe {
+    display: block;
+    }
+    
+    @media (max-width: 768px) {
+    .mini-jeu {
+    max-width: 500px;
+    margin: 0 auto;
+    }
+    }
 
   /* Aligner les éléments h2 et h3 sur la même colonne */
   .service h2, .service h3 {
