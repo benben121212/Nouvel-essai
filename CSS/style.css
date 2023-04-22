@@ -222,20 +222,6 @@ nav a {
   height: 150px;
 }
   
-#contact input[type='submit'] {
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 18px;
-  cursor: pointer;
-  transition: background-color 0.8s ease;
-}
-    
-#contact input[type='submit']:hover {
-  background-color: #3e8e41;
-}
 
 /* Styles pour le footer */
 footer {
