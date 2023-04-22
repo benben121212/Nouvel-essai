@@ -1,6 +1,6 @@
 /* Styles pour le corps de la page */
 body {
-  background-image: url(/Images/background2.jpg);
+  background-image: url(https://th.bing.com/th/id/R.621f87ed393d886eeef638df20b78a8a?rik=kghAsVi2NrDChA&pid=ImgRaw&r=0.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -11,26 +11,34 @@ body {
 
 /* Styles pour le header */
 header {
+  background-image: url(https://th.bing.com/th/id/R.9503cbf9a75836a0d91ae6b9d29cda30?rik=ljPwvNLClAMDuQ&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f06%2fBlack-and-Blue-Desktop-Wallpapers.jpg&ehk=Lyq4Gpck705WZBxBxBKn5tQ0WOIXO4PhPHvY4R6EUNo%3d&risl=&pid=ImgRaw&r=0.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #333;
   color: #fff;
   padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  height: auto;
+  overflow: auto;
 }
   
 #logo img {
   max-width: 100%;
+  display: block;
 }
   
 nav ul {
-  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
+  text-align: right;
 }
   
 nav li {
+  display: inline-block;
   margin: 0 10px;
 }
   
@@ -38,16 +46,29 @@ nav a {
   color: #fff;
   text-decoration: none;
 }
-  
+
+/* Styles pour les sections */
+
+section {
+  height: 100vh;
+  font-size: 5rem;
+  transition: background-color 0.5s ease;
+  position: relative;
+}
+
+section.active {
+  background-color: #f8f8f8;
+}
+
 /* Styles pour la section intro */
 #intro {
   background-color: rgba(0, 0, 0, 0.6);
   font-family: Arial, sans-serif;
   padding: 50px;
-  margin-top: 50px;
+  margin-top: 110px;
   margin-bottom: 50px;
   text-align: center;
-  height: 100vh;
+  height: auto;
 }
 
 #intro h1 {
@@ -80,6 +101,58 @@ nav a {
   margin-bottom: 30px;
 }
 
+/* Styles pour les sections */
+section {
+  height: 100vh;
+  font-size: 2rem;
+  transition: background-color 0.5s ease;
+  position: relative;
+  }
+  
+section.active {
+  background-color: #f8f8f8;
+}
+  
+/* Styles pour la section intro */
+#intro {
+  background-color: rgba(0, 0, 0, 0.6);
+  font-family: Arial, sans-serif;
+  padding: 50px;
+  margin-top: 110px;
+  margin-bottom: 50px;
+  text-align: center;
+  height: auto;
+}
+  
+#intro h1 {
+  font-size: 3rem;
+  color: #ff0000;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+  
+#intro p {
+  font-size: 1.5rem;
+  color: #ffffff;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+  
+#intro h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+  
+#intro h3 {
+  font-size: 1.5rem;
+  color: #ff0000;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  }
+  
 /* Styles pour la section services */
 #services {
   background-color: rgba(0, 0, 0, 0.6);
@@ -88,49 +161,37 @@ nav a {
   background-repeat: no-repeat;
   font-family: Arial, sans-serif;
   min-height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 50px 70px;
+  padding: 50px;
 }
-
+ 
 #services > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
-
-#services > div > h2 {
   
+#services > div > h2 {
   text-decoration: underline;
   text-align: center;
   margin-top: 0;
-  font-size: 2.5em;
+  font-size: 2rem;
   font-weight: bold;
   color: #d60000;
 }
-
+  
 .service {
-  background-color: rgb(255, 255, 255, 0.5);
-  box-shadow: 2px 2px 4px rgb(255, 255, 255);
-  align-items: center;
-  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 2px 2px 4px rgba(255, 255, 255, 1);
   padding: 40px 60px;
   margin-top: 30px;
   margin-bottom: 50px;
-  flex-basis: calc(33.33% - 40px);
-  font-size: 1.2em;
-  line-height: 1.5em;
+  width: calc(33.33% - 40px);
+  font-size: 1.2rem;
+  line-height: 1.5rem;
   text-align: justify;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
-
+  
 .service h3 {
   margin-top: 30px;
-  font-size: 2em;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #d60000;
   text-decoration: underline;
@@ -138,26 +199,24 @@ nav a {
   font-weight: bold;
   display: inline-block;
 }
-
+  
 .service ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
+  
 .service li {
   margin-bottom: 20px;
 }
-
-.service p { 
-  font-size: 1.2em;
-  line-height: 1.5em;
-  flex-basis: calc(50% - 40px);
-  padding: 50px 30px;
-  margin-top: 50px;
+  
+.service p {
+  width: 100%;
+  padding: 30px;
+  margin-top: 30px;
   margin-bottom: 0;
-  font-size: 1.2em;
-  line-height: 1.5em;
+  font-size: 1rem;
+  line-height: 1.5rem;
   text-align: left;
   color: #ffffff;
 }
@@ -174,9 +233,15 @@ nav a {
 
 /* Adjust elements for smaller screens */
 @media screen and (max-width: 767px) {
-  #services {
-    padding: 50px 20px;
-  } 
+#services {
+  padding: 50px 20px;
+}
+
+.service {
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0;
+}
 }
 
 /* Styles pour le contact */
@@ -185,7 +250,7 @@ nav a {
   color: #ffffff;
   font-family: Arial, sans-serif;
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 50px; 
+  padding: 50px;
 }
   
 #contact h2 {
@@ -196,9 +261,6 @@ nav a {
 }
   
 #contact form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -222,6 +284,21 @@ nav a {
   height: 150px;
 }
   
+#contact input[type='submit'] {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact input[type='submit']:hover {
+  background-color: #3e8e41;
+  color: #ffffff;
+}
 
 /* Styles pour le footer */
 footer {
