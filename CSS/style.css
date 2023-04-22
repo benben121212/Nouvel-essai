@@ -20,7 +20,6 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  display: block;
   height: auto;
   overflow: auto;
 }
@@ -47,19 +46,6 @@ nav a {
   text-decoration: none;
 }
 
-/* Styles pour les sections */
-
-section {
-  height: 100vh;
-  font-size: 5rem;
-  transition: background-color 0.5s ease;
-  position: relative;
-}
-
-section.active {
-  background-color: #f8f8f8;
-}
-
 /* Styles pour la section intro */
 #intro {
   background-color: rgba(0, 0, 0, 0.6);
@@ -72,14 +58,14 @@ section.active {
 }
 
 #intro h1 {
-  font-size: 36px;
+  font-size: 3rem;
   color: #ff0000;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 #intro p {
-  font-size: 18px;
+  font-size: 1.5rem;
   color: #ffffff;
   line-height: 1.5;
   margin-bottom: 30px;
@@ -87,15 +73,15 @@ section.active {
 }
 
 #intro h2 {
-  font-size: 24px;
+  font-size: 2rem;
   color: #fff;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-
 #intro h3 {
-  font-size: 18px;
+  font-size: 1.5rem;
+
   color: #ff0000;
   line-height: 1.5;
   margin-bottom: 30px;
