@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+
+ <head>
     <!-- Commentaire pour les balises meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Titre de la page</title>
     <link rel="stylesheet" href="CSS/style.css">
-</head>
-<body>
+    <link rel="JavaScript" href="JS/script.js">
+ </head>
+
+ <body>
+
     <header>
         <div id="logo">
             <!-- Commentaire pour le logo -->
@@ -18,37 +22,76 @@
             <ul>
                 <li><a href="#intro">Accueil</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#intro h1">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
 	<main>
     <!-- Commentaire pour la section principale -->
-     <section id="intro">
+      <section id="intro">
         <h1>Bienvenue sur mon site</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-     </section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus malesuada libero, at commodo nulla lacinia a. Suspendisse quis turpis vitae neque pretium hendrerit. Etiam eu lacus et quam sagittis ultricies non sed nulla. Fusce bibendum suscipit tellus, ut viverra purus. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum luctus lobortis justo at lobortis. Nullam vel erat finibus, sodales justo eget, iaculis nisl. Sed vel magna tincidunt, bibendum quam sit amet, vestibulum lorem.</p>
+        <h2>Créer du contenu :</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus malesuada libero, at commodo nulla lacinia a. Suspendisse quis turpis vitae neque pretium hendrerit. Etiam eu lacus et quam sagittis ultricies non sed nulla. Fusce bibendum suscipit tellus, ut viverra purus. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum luctus lobortis justo at lobortis. Nullam vel erat finibus, sodales justo eget, iaculis nisl. Sed vel magna tincidunt, bibendum quam sit amet, vestibulum lorem.</p>
+        <h2>Présentation:</h2>
+          <p>Bonjour ! Je suis ravi de faire votre connaissance. Je suis un étudiant en développement web débutant et j'ai décidé de me lancer dans la création de mon premier site web en utilisant les langages HTML, CSS et JavaScript.
+
+            Je suis passionné par la technologie et l'informatique depuis mon plus jeune âge. J'ai toujours été fasciné par la façon dont les sites web sont créés et j'ai toujours voulu en savoir plus sur la façon dont ils fonctionnent. C'est pourquoi j'ai décidé de me lancer dans cette aventure passionnante de la création de mon propre site web.
+            
+            Je suis conscient que le développement web est un domaine très vaste et complexe. Cependant, je suis prêt à relever le défi et à acquérir les compétences nécessaires pour devenir un développeur web compétent.
+            
+            Je suis actuellement en train d'apprendre les bases du HTML, qui est le langage de balisage utilisé pour créer la structure de base de mon site web. Ensuite, je vais apprendre le CSS, qui me permettra de styliser mon site web et de le rendre plus attrayant. Enfin, je vais apprendre le JavaScript, qui me permettra de rendre mon site web interactif et dynamique.
+            
+            Je suis conscient que ce ne sera pas facile et que je vais rencontrer des défis tout au long de mon parcours. Cependant, je suis déterminé à travailler dur et à persévérer pour atteindre mes objectifs.
+            
+            Je suis impatient de partager avec vous mes progrès dans la création de mon site web et de discuter de toutes les nouvelles technologies et tendances du développement web.
+         </p>
+      </section>
     
-     <section id="services">
-        
-         <div class="service">
-			<h2>Mes services</h2>
-            <!-- Commentaire pour le service 1 -->
-            <h3>Service 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-         </div>
+      <section id="services">
+        <div id="titre">
+            <h2>Mes services :</h2>
+        </div>
         <div class="service">
-            <!-- Commentaire pour le service 2 -->
-            <h3>Service 2</h3>
+            <!-- Commentaire pour le service 1 -->
+            <h3>Service 1:</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-     </section>
+        <div class="service">
+            <!-- Commentaire pour le service 2 -->
+            <h3>Service 2:</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="service">
+            <!-- Commentaire pour le service 3 -->
+            <h3>Service 3:</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </section>
     </main>
-	
+    <main>
+      <section id="contact">
+            <h2>Contactez-moi</h2>
+        <div>
+             <form action="mailto:exemple@gmail.com" method="post" enctype="text/plain">
+              <label for="nom">Nom:</label>
+              <input type="text" id="nom" name="nom" required><br>
+        
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required><br>
+        
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea><br>
+        
+              <input type="submit" value="Envoyer">
+             </form>
+        </div>
+      </section>
+    </main>
 	<footer>
 		<!-- Commentaire pour le pied de page -->
-		<p>&copy; 2023 Mon entreprise</p>
+		<p>&copy; 2023 BenDE</p>
 	</footer>
-</body>
+ </body>
 </html>

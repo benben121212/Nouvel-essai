@@ -1,150 +1,246 @@
 /* Styles pour le corps de la page */
 body {
-    margin: 0;
-    padding: 0;
+  background-image: url(/Images/background2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* Styles pour le header */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+  
 #logo img {
-    max-width: 100%;
+  max-width: 100%;
 }
-
+  
 nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-
+  
 nav li {
-    margin: 0 10px;
+  margin: 0 10px;
 }
-
+  
 nav a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
-
+  
 /* Styles pour la section intro */
 #intro {
-    background-color: #ffffff;
-    padding: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-family: Arial, sans-serif;
+  padding: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  height: 100vh;
 }
 
-#intro h1 { 
-    font-size: 2em;
+#intro h1 {
+  font-size: 36px;
+  color: #ff0000;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Styles for the section services */
+#intro p {
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#intro h2 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+#intro h3 {
+  font-size: 18px;
+  color: #ff0000;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+/* Styles pour la section services */
 #services {
-    background-image: url("/Images/fondgamer.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: Arial, sans-serif;
-    min-height: 100vh;
-    display: grid;
-    grid-template-areas:
-    "header header header"
-    "service1 service2 service3"
-    "service4 service5 service6";
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto 1fr;
-    grid-gap: 50px;
-    align-items: center;
-    padding: 50px;
-    }
-    
-    #services h2 {
-    grid-area: header;
-    text-align: left;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    font-size: 2.5em;
-    }
-    
-    .service {
-    display: grid;
-    grid-template-areas:
-    "title title"
-    "description image";
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto auto;
-    background-color: transparent;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 60px;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    }
-    
-    .service h3 {
-    grid-area: title;
-    text-align: right;
-    margin-top: 30px;
-    font-size: 2em;
-    font-weight: bold;
-    color: #d60000;
-    text-decoration: underline;
-    }
-    
-    .service p {
-    grid-area: description;
-    font-size: 1.2em;
-    line-height: 1.5em;
-    text-align: left;
-    color: #555;
-    }
-    
-    .service img {
-    grid-area: image;
-    }
+  background-color: rgba(0, 0, 0, 0.6);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 70px;
+}
+
+#services > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#services > div > h2 {
   
-  /* Increase spacing between the columns */
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 0;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #d60000;
+}
+
+.service {
+  background-color: rgb(255, 255, 255, 0.5);
+  box-shadow: 2px 2px 4px rgb(255, 255, 255);
+  align-items: center;
+  justify-content: center;
+  padding: 40px 60px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  flex-basis: calc(33.33% - 40px);
+  font-size: 1.2em;
+  line-height: 1.5em;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service h3 {
+  margin-top: 30px;
+  font-size: 2em;
+  font-weight: bold;
+  color: #d60000;
+  text-decoration: underline;
+  margin-top: 30px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.service ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.service li {
+  margin-bottom: 20px;
+}
+
+.service p { 
+  font-size: 1.2em;
+  line-height: 1.5em;
+  flex-basis: calc(50% - 40px);
+  padding: 50px 30px;
+  margin-top: 50px;
+  margin-bottom: 0;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  text-align: left;
+  color: #ffffff;
+}
+
+.service img {
+  margin-top: 20px;
+  max-width: 100%;
+}
+
+/* Aligner les éléments h2 et h3 sur la même colonne */
+.service h2, .service h3 {
+  margin: 0;
+}
+
+/* Adjust elements for smaller screens */
+@media screen and (max-width: 767px) {
   #services {
-    grid-gap: 70px;
-  }
+    padding: 50px 20px;
+  } 
+}
+
+/* Styles pour le contact */
+#contact {
+  height: 100vh;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 50px; 
+}
   
-  /* Adjust elements for smaller screens */
-  @media screen and (max-width: 767px) {
-    #services {
-      align-items: stretch;
-      padding: 50px 20px;
-    }
+#contact h2 {
+  color: red;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 40px;
+}
   
-    .service {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto auto auto;
-      padding: 50px 30px;
-      margin-top: 50px;
-      margin-bottom: 0;
-    }
+#contact form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
   
-    .service h3 {
-      grid-column: 1 / -1;
-      grid-row: 2 / 3;
-      margin-top: 0;
-      text-align: center;
-    }
-  }
+#contact label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
   
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+}
   
+#contact textarea {
+  height: 150px;
+}
+  
+#contact input[type='submit'] {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.8s ease;
+}
+    
+#contact input[type='submit']:hover {
+  background-color: #3e8e41;
+}
+
 /* Styles pour le footer */
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
 }
